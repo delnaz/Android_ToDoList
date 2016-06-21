@@ -30,6 +30,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Learning how to incorporate SQLite in the application along with making custom adapter was a challenge in the beginning.
 
+To import and build: Clone the repository and import the project into Android Studio
+
 ## License
 
     Copyright [yyyy] [name of copyright owner]
