@@ -38,12 +38,10 @@ public class EditItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_item);
         Bundle intent = getIntent().getExtras();
-        //Log.d("1111", "intent.getInt(EXTRA_ID) = "+ intent.getString(EXTRA_ID)+"");
         if(intent.containsKey(EXTRA_NAME))
             mName = intent.getString(EXTRA_NAME);
         if(intent.containsKey(EXTRA_ID))
             mId = intent.getString(EXTRA_ID);
-       // Log.d("1111", "id = "+ mId+"");
         if(intent.containsKey(EXTRA_PRI))
             mPri = intent.getString(EXTRA_PRI);
         if(intent.containsKey(EXTRA_DUE_DATE))
@@ -51,7 +49,6 @@ public class EditItemActivity extends AppCompatActivity {
 
         if(intent.containsKey(EXTRA_POSITION))
             position = intent.getInt(EXTRA_POSITION);
-        //Log.d("111111", text);
         editText = (EditText) findViewById(R.id.etEditText);
         editText.setText(mName);
         editText.setSelection(mName.length());

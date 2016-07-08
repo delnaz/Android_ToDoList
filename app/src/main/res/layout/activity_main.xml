@@ -7,17 +7,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBg"
     tools:context="com.codepath.codepathtodolistapp.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add"
+    <ImageButton
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@null"
+        android:src="@drawable/ic_add"
         android:id="@+id/btnAddItem"
         android:onClick="onAdd"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/lvItems"
-        android:layout_alignEnd="@+id/lvItems" />
+        android:layout_alignEnd="@+id/lvItems"
+        android:scaleType="fitCenter"/>
 
     <ListView
         android:layout_width="match_parent"
@@ -26,8 +29,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:dividerHeight="5dp"
+        android:divider="@android:color/transparent"
         android:layout_above="@+id/btnAddItem" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
